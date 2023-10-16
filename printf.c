@@ -30,6 +30,7 @@ int print_format(char specifier, va_list ap)
 		count += print_integer(va_arg(ap, int)); /* to print integer */
 		break;
 	default:
+		retrun(-1);
 		break;
 	}
 	return (count);
