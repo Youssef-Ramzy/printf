@@ -42,24 +42,23 @@ int print_format(char specifier, va_list ap)
  */
 int _printf(const char *format, ...)
 {
-	int i, count = 0;
+	int count = 0;
 	va_list ap;
 
 	va_start(ap, format);
 	if (format == NULL)
 		return (-1);
-	for (i = 0; format[i] != '\0'; i++)
+	while (*format != '\0')
 	{
-		if (format[i] == '%')
+		if (*format == '%')
 		{
-			count += print_format(format[i + 1], ap);
-			i++;
+			count += print_format(*(++format), ap);
 		}
 		else
 		{
-			_putchar(format[i]);
-			count++;
+			count += _putchar(*format);
 		}
+		++format;
 	}
 	va_end(ap);
 	return (count);
