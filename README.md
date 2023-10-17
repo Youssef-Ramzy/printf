@@ -1,7 +1,7 @@
-## printf project
-# This was a tea consuming project.
+# printf project
+## This was a tea consuming project.
 
-## Authors
+# Authors
 
 - [@Ramzy](https://www.github.com/Youssef-Ramzy)
 - [@Youssef](https://www.github.com/Yousefatt)
