@@ -29,6 +29,8 @@ int print_format(char specifier, va_list ap)
 	case 'i':
 		count += print_integer(va_arg(ap, int)); /* to print integer */
 		break;
+	case '\n':
+		return (0);
 	default:
 		count += _putchar('%');
 		count += _putchar(specifier);
@@ -48,7 +50,7 @@ int _printf(const char *format, ...)
 	va_list ap;
 
 	va_start(ap, format);
-	if (!format || format[0] == '%' && !format[1])
+	if (format == NULL)
 		return (-1);
 	while (format[i] != '\0')
 	{

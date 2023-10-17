@@ -3,6 +3,7 @@
 #include <limits.h>
 #include <stdlib.h>
 #include <stdio.h>
+#define NULL ((char *)0)
 
 /**
  * print_format - prints a string
@@ -29,6 +30,8 @@ int print_format(char specifier, va_list ap)
 	case 'i':
 		count += print_integer(va_arg(ap, int)); /* to print integer */
 		break;
+	case '\n':
+		return (0);
 	default:
 		count += _putchar('%');
 		count += _putchar(specifier);
