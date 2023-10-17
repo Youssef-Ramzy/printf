@@ -1,5 +1,5 @@
 # printf project
-## This was a tea consuming project.
+This was a tea consuming project.
 
 # Authors
 
