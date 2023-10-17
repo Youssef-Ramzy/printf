@@ -41,6 +41,8 @@ int main(void)
 	/*_printf("Len:[%d]\n", len);*/
 	/*printf("Len:[%d]\n", len2);*/
 	_printf("Unknown:[%r]\n");
+	_printf(NULL);
+	_printf("%d\n", _printf(NULL));
 	/*printf("Unknown:[%r]\n");*/
 	return (0);
 }
