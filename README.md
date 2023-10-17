@@ -1,5 +1,5 @@
 ## printf project
-This project with alot of worke with some copy pest.
+# This was a tea consuming project.
 
 ## Authors
 
