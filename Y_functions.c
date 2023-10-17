@@ -14,13 +14,15 @@ int print_integer(int n)
 
 	if (n < 0)
 	{
-		count += _putchar('-');
+		_putchar('-');
 		n = -n;
+		count++;
 	}
 	if (n / 10)
 	{
 		count += print_integer(n / 10);
 	}
-	count += _putchar((n % 10) + '0');
+	_putchar((n % 10) + '0');
+	count++;
 	return (count);
 }
