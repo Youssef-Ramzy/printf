@@ -32,6 +32,8 @@ int print_format(char specifier, va_list ap)
 	case 'r':
 		return (-1);
 	default:
+		count += _putchar('%');
+		count += _putchar(specifier);
 		break;
 	}
 	return (count);
